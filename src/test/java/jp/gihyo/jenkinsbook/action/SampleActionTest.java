@@ -18,6 +18,21 @@ public class SampleActionTest {
 		JUnitCore.main(SampleActionTest.class.getName());
 	}
 
+       @Test
+       public final boolean checkParameter(final HttpServletRequest request){
+         
+         firstName = request.getParameter("FirstName");
+         if ((firstName == null) || ("".equals(firstName))){
+           return true;
+         }
+
+         return true;
+       }
+
+
+
+
+
 	@Test
 	public void testCheckNormal() {
 		SampleAction action = new SampleAction();
