@@ -23,7 +23,7 @@ public class SampleActionTest {
          
          firstName = request.getParameter("FirstName");
          if ((firstName == null) || ("".equals(firstName))){
-           return true;
+           return false;
          }
 
          return true;
