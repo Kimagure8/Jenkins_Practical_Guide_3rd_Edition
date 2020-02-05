@@ -62,12 +62,12 @@ public class SampleAction {
      */
     public final String execute(final HttpServletRequest request) {
         SampleDTO dto = new SampleDTO(firstName, lastName);
-        private final int AFTERNOON = 12;        
+        private final int number = 12;
 
         //Select the greeting message according to the time
         Calendar calendar = Calendar.getlnstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        if (hour < AFTERNOON) {
+        if (hour < number) {
           dto.setMessage("Good morning");
         } else {
           dto.setMessage("Good afternoon");
